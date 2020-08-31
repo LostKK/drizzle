@@ -7,6 +7,11 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
+    name: "dashboard",
+    component: () => import("@/views/pages/dashboard.vue")
+  },
+  {
+    path: "/home",
     name: "Home",
     component: Home
   },
