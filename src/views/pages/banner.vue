@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-    <div class="bg back"><h1>hello KK</h1></div>
+    <div class="bg back"><h1>努力,奋斗</h1></div>
   </div>
 </template>
 
@@ -36,9 +36,6 @@ export default {
     height: 100%;
     background: white url("../../assets/mountain.png") no-repeat center center
       scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 
     .back {
