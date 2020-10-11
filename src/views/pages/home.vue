@@ -1,29 +1,27 @@
 <template>
   <div class="d-flex z-0 main">
-    <div class="banner">
-      <banner />
+    <direct alive="Home"></direct>
+    <div class="word">
+      <word></word>
     </div>
-
-    <div class="direct">
-      <direct></direct>
+    <div class="line">
+      <lines></lines>
     </div>
-
-    <toHome></toHome>
   </div>
 </template>
 
 <script>
-import banner from "@/views/pages/banner.vue";
 import direct from "@/views/pages/direct.vue";
-import toHome from "@/views/pages/toHome.vue";
+import word from "@/views/component/word.vue";
+import lines from "@/views/component/line.vue";
 
 export default {
   name: "home",
 
   components: {
-    banner,
     direct,
-    toHome
+    word,
+    lines
   }
 };
 </script>
@@ -31,33 +29,24 @@ export default {
 <style lang="scss" scoped>
 .main {
   position: relative;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
-}
+  background-image: url("../../assets/img/green.jpg");
+  background-size: 1920px 1080px;
+  background-position: center center;
 
-@media screen and (min-width: 769px) {
-  .banner {
-    height: 80vh;
-    width: 100vw;
-    padding: 10vh 5vw 10vh 10vw;
+  .word {
+    position: relative;
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
   }
 
-  .direct {
+  .line {
     position: fixed;
-    left: 0;
-    z-index: 3;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .banner {
-    height: 80vh;
-    width: 100vw;
-    padding: 10vh 5vw 10vh 5vw;
-  }
-
-  .direct {
-    display: none;
+    width: 100%;
+    bottom: 10vh;
   }
 }
 </style>

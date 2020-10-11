@@ -1,19 +1,33 @@
 <template>
   <div class="direct_container">
-    <div class="main">
-      <div class="single" @click="toNext('/')">
+    <div class="main container_long">
+      <div
+        class="single"
+        @click="toNext('/')"
+        v-bind:class="[alive === 'Home' ? 'alive' : 'notAlive']"
+      >
         <font>Home</font>
       </div>
-      <div class="single" @click="toNext({ name: 'article' })">
-        <font>Words</font>
+      <div
+        class="single"
+        @click="toNext({ name: 'article' })"
+        v-bind:class="[alive === 'Work' ? 'alive' : 'notAlive']"
+      >
+        <font>Work</font>
       </div>
-      <div class="single" @click="toNext({ name: 'story' })">
-        <font>Story</font>
+
+      <div
+        class="single"
+        @click="toNext({ name: 'collect' })"
+        v-bind:class="[alive === 'Collect' ? 'alive' : 'notAlive']"
+      >
+        <font>Collect</font>
       </div>
-      <div class="single" @click="toNext({ name: 'collect' })">
-        <font>collect</font>
-      </div>
-      <div class="single" @click="toNext({ name: 'about' })">
+      <div
+        class="single"
+        @click="toNext({ name: 'about' })"
+        v-bind:class="[alive === 'About' ? 'alive' : 'notAlive']"
+      >
         <font>About</font>
       </div>
     </div>
@@ -23,6 +37,13 @@
 <script>
 export default {
   name: "direct",
+
+  props: {
+    alive: {
+      type: String,
+      default: ""
+    }
+  },
 
   data() {
     return {};
@@ -38,15 +59,18 @@ export default {
 
 <style lang="scss" scoped>
 .direct_container {
+  position: absolute;
   display: flex;
   align-items: center;
-  width: 10vw;
-  height: 100vh;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 10vh;
+  z-index: 10;
   .main {
     display: flex;
-    flex-direction: column;
-    height: 50vh;
-    width: 100%;
+    flex-direction: row;
+    height: 100%;
+    width: 30%;
     .single {
       display: flex;
       justify-content: center;
@@ -57,9 +81,24 @@ export default {
       width: 100%;
       height: 100%;
       font:hover {
-        color: #848484;
+        // color: #848484;
+        transform: scale(1.33);
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  .container_long {
+    width: 100% !important;
+  }
+}
+
+.alive {
+  color: #848484 !important;
+  // transform: scale(1.33);
+}
+
+.notAlive {
 }
 </style>
