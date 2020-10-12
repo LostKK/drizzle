@@ -4,6 +4,9 @@
     <div class="word">
       <word></word>
     </div>
+    <div class="icon">
+      <div class="icon_image"></div>
+    </div>
     <div class="line">
       <lines></lines>
     </div>
@@ -41,6 +44,17 @@ export default {
     width: 100%;
     padding: 20px 20px;
     box-sizing: border-box;
+  }
+
+  .icon {
+    height: 200px;
+    width: 100%;
+    .icon_image {
+      height: 100%;
+      background: url("../../assets/img/main_icon.png") no-repeat;
+      background-size: 320px;
+      background-position: center center;
+    }
   }
 
   .line {

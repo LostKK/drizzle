@@ -1,207 +1,25 @@
 <template>
-  <div>
+  <div class="collect_container">
     <direct alive="Collect"></direct>
-    <div class="body">
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
-      <div class="snow"></div>
+
+    <div class="page flex_direct">
+      <div class="left the_top the_width">
+        <div class="num">
+          <span>5/7</span>
+        </div>
+        <div class="name"><span>练习册</span></div>
+        <div class="text">
+          <span
+            >“文字设计具有双重性：首先，设计作品要具备功能性；其次，它也应具备艺术审美性”</span
+          >
+        </div>
+        <div class="detail">
+          <span @click="goDetail">详情</span>
+        </div>
+      </div>
+      <div class="right the_top the_width" @click="goDetail">
+        <div></div>
+      </div>
     </div>
   </div>
 </template>
@@ -214,58 +32,107 @@ export default {
 
   components: {
     direct
+  },
+
+  data() {
+    return {};
+  },
+
+  methods: {
+    goDetail() {
+      this.$router.push({ name: "snow" });
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.body {
-  height: 100vh;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
-  filter: drop-shadow(0 0 10px white);
+.collect_container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  .page {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 10vh;
+    .left {
+      // min-width: 360px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0 20px;
+      box-sizing: border-box;
+      .num {
+        color: #dbe1e6;
+        font-size: 30px;
+        letter-spacing: 3px;
+        font-weight: 600;
+      }
+      .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1b1d1f;
+        font-size: 80px;
+        font-weight: bold;
+        height: 150px;
+      }
+      .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1b1d1f;
+        font-size: 16px;
+        font-weight: 400;
+        height: 100px;
+      }
+      .detail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 100px;
+        border-radius: 50px;
+        background: #a6b2ba;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    .right {
+      background: blue;
+      height: 50vh;
+      width: 40%;
+      border-radius: 10px;
+    }
+  }
 }
 
-@function random_range($min, $max) {
-  $rand: random();
-  $random_range: $min + floor($rand * (($max - $min) + 1));
-  @return $random_range;
+.flex_direct {
+  flex-direction: row;
 }
 
-.snow {
-  $total: 200;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 50%;
+.the_top {
+  margin-top: 100px;
+}
 
-  @for $i from 1 through $total {
-    $random-x: random(1000000) * 0.0001vw;
-    $random-offset: random_range(-100000, 100000) * 0.0001vw;
-    $random-x-end: $random-x + $random-offset;
-    $random-x-end-yoyo: $random-x + ($random-offset / 2);
-    $random-yoyo-time: random_range(30000, 80000) / 100000;
-    $random-yoyo-y: $random-yoyo-time * 100vh;
-    $random-scale: random(10000) * 0.0001;
-    $fall-duration: random_range(10, 30) * 1s;
-    $fall-delay: random(30) * -1s;
+.the_width {
+  width: 40%;
+}
 
-    &:nth-child(#{$i}) {
-      opacity: random(10000) * 0.0001;
-      transform: translate($random-x, -10px) scale($random-scale);
-      animation: fall-#{$i} $fall-duration $fall-delay linear infinite;
-    }
+@media screen and (max-width: 768px) {
+  .flex_direct {
+    flex-direction: column;
+  }
 
-    @keyframes fall-#{$i} {
-      #{percentage($random-yoyo-time)} {
-        transform: translate($random-x-end, $random-yoyo-y) scale($random-scale);
-      }
+  .the_top {
+    margin-top: 20px;
+  }
 
-      to {
-        transform: translate($random-x-end-yoyo, 100vh) scale($random-scale);
-      }
-    }
+  .the_width {
+    width: 100%;
   }
 }
 </style>
