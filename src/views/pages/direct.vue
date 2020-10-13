@@ -1,5 +1,5 @@
 <template>
-  <div class="direct_container">
+  <div class="direct_container " v-bind:style="{ background: bgColor }">
     <div class="main container_long">
       <div
         class="single"
@@ -10,7 +10,7 @@
       </div>
       <div
         class="single"
-        @click="toNext({ name: 'article' })"
+        @click="toNext({ name: 'work' })"
         v-bind:class="[alive === 'Work' ? 'alive' : 'notAlive']"
       >
         <font>Work</font>
@@ -42,6 +42,11 @@ export default {
     alive: {
       type: String,
       default: ""
+    },
+
+    bgColor: {
+      type: String,
+      default: ""
     }
   },
 
@@ -59,7 +64,9 @@ export default {
 
 <style lang="scss" scoped>
 .direct_container {
-  position: absolute;
+  // position: absolute;
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -81,7 +88,6 @@ export default {
       width: 100%;
       height: 100%;
       font:hover {
-        // color: #848484;
         transform: scale(1.33);
       }
     }

@@ -10,9 +10,9 @@ const routes = [
     component: () => import("@/views/pages/home.vue")
   },
   {
-    path: "/article",
-    name: "article",
-    component: () => import("@/views/pages/article.vue")
+    path: "/work",
+    name: "work",
+    component: () => import("@/views/pages/work.vue")
   },
   {
     path: "/collect",
@@ -28,6 +28,21 @@ const routes = [
     path: "/snow",
     name: "snow",
     component: () => import("@/views/collect/snow.vue")
+  },
+  {
+    path: "/test",
+    name: "test",
+    component: () => import("@/views/collect/test.vue")
+  },
+  {
+    path: "/edit",
+    name: "edit",
+    component: () => import("@/views/component/edit.vue")
+  },
+  {
+    path: "/workDetail",
+    name: "workDetail",
+    component: () => import("@/views/component/workDetail.vue")
   }
 ];
 

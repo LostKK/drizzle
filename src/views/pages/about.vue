@@ -1,6 +1,6 @@
 <template>
   <div class="about_container">
-    <direct alive="About"> </direct>
+    <direct alive="About" bgColor="white"></direct>
 
     <div class="first_page flex_direct">
       <div class="left left_width">
@@ -53,42 +53,7 @@
         <div class="myword">
           <span>(´-ω-`)</span>
         </div>
-        <!-- <div class="double">
-          <div class="single">
-            <div class="title"><span>设备名称</span></div>
-            <div class="detail"><span>李泳康</span></div>
-          </div>
-          <div class="single">
-            <div class="title"><span>设备规格</span></div>
-            <div class="detail"><span>web前端</span></div>
-          </div>
-        </div>
-        <div class="double">
-          <div class="single">
-            <div class="title"><span>出厂年份</span></div>
-            <div class="detail"><span>2019</span></div>
-          </div>
-          <div class="single">
-            <div class="title"><span>产地</span></div>
-            <div class="detail"><span>广州</span></div>
-          </div>
-        </div>
-        <div class="double">
-          <div class="single">
-            <div class="title"><span>运行环境</span></div>
-            <div class="detail">
-              <span>无论什么样的业务风格我都会去尝试</span>
-            </div>
-          </div>
-        </div>
-        <div class="double">
-          <div class="single">
-            <div class="title"><span>设备特点</span></div>
-            <div class="detail">
-              <span>坚持不放弃</span>
-            </div>
-          </div>
-        </div> -->
+
         <div class="onBottom mrtop">
           <div class="icon">
             <div class="icon_size bg_git" @click="toGit"></div>

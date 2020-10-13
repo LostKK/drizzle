@@ -47,3 +47,14 @@ body {
 }
 
 
+.context {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  p {
+    max-width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
+}
