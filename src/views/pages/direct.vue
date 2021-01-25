@@ -25,7 +25,7 @@
       </div>
       <div
         class="single"
-        @click="toNext({ name: 'about' })"
+        @click="toNext({ name: 'about2' })"
         v-bind:class="[alive === 'About' ? 'alive' : 'notAlive']"
       >
         <font>About</font>

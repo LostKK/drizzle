@@ -2,7 +2,7 @@
 const webpack = require("webpack");
 
 module.exports = {
-  outputDir: "drizzle",
+  outputDir: "dist",
   configureWebpack: {
     plugins: [
       new webpack.ProvidePlugin({

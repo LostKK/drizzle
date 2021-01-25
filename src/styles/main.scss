@@ -1,7 +1,9 @@
 @import "variable";
 
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial,
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -20,32 +22,32 @@ body {
   margin: 0;
   padding: 0;
   background: white;
+  font-family: pingfang SC;
 }
 
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.row-reverse{
+.row-reverse {
   flex-direction: row-reverse;
 }
 
-.justify-content-center{
+.justify-content-center {
   justify-content: center;
 }
 
-.align-items-center{
+.align-items-center {
   align-items: center;
 }
 
 .wrap {
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .z-0 {
-  z-index:0
+  z-index: 0;
 }
-
 
 .context {
   width: 100%;

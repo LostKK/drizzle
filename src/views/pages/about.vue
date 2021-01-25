@@ -97,7 +97,7 @@
 import direct from "@/views/pages/direct.vue";
 
 export default {
-  nme: "about",
+  name: "about",
 
   components: {
     direct
@@ -112,6 +112,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$me: "../../assets/img/kiss.jpg";
+
 .about_container {
   display: flex;
   flex-direction: column;
@@ -146,9 +148,9 @@ export default {
       }
       .head {
         margin-bottom: 20px;
-        background-image: url("../../assets/img/kk.jpg");
-        background-position: 100% 10%;
-        background-size: 162px 216px;
+        background-image: url($me);
+        background-position: 100% 20%;
+        background-size: cover;
         width: 150px;
         height: 150px;
         min-height: 150px;
