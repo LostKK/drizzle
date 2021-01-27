@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import direct from "@/views/pages/direct.vue";
+import direct from "@/views/component/direct.vue";
 
 export default {
   name: "collect",
@@ -63,19 +63,45 @@ export default {
       currentIndex: 0,
       collectList: [
         {
+          name: "遗愿清单",
+          text: "我听闻 人来到世界上是要做很多事情的 我不想白活一辈子",
+          image: "https://i.cssj.fun/usr/uploads/2018/08/1447571381.jpg",
+          routeName: "wish"
+        },
+        {
+          name: "大雨滂沱",
+          text: "多少故事甜在心头",
+
+          image:
+            "https://i.cssj.fun/usr/uploads/2019/08/le-creuset-m4ChAAL8E98-unsplash.png",
+          routeName: "rain"
+        },
+        {
+          name: "努力 奋斗！",
+          text: "还要赶多少路才能安睡",
+          image: "https://i.cssj.fun/usr/uploads/2018/08/1447571381.jpg",
+          routeName: "learn"
+        },
+        {
+          name: "钟爱的电影",
+          text: "电影在某种程度上延展了我的人生",
+          image: "https://i.cssj.fun/usr/uploads/2018/08/1447571381.jpg",
+          routeName: "she"
+        },
+        {
           name: "大雪下了一整夜",
-          text:
-            "文字设计具有双重性：首先，设计作品要具备功能性；其次，它也应具备艺术审美性",
+          text: "人生愿望 遇见一场很大很大的雪",
 
           image:
             "https://i.cssj.fun/usr/uploads/2019/08/le-creuset-m4ChAAL8E98-unsplash.png",
           routeName: "snow"
         },
         {
-          name: "css效果",
-          text: "像其他设计一样，视觉设计也是解决问题，不是个人喜好",
+          name: "that girl",
+          text:
+            "I could've held your hand But I was young and then I blew every circumstance",
           image: "https://i.cssj.fun/usr/uploads/2018/08/1447571381.jpg",
-          routeName: "test"
+          routeName: "she"
         }
       ]
     };

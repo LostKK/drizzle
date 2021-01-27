@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import direct from "@/views/pages/direct.vue";
+import direct from "@/views/component/direct.vue";
 
 export default {
   name: "work",
@@ -158,7 +158,7 @@ export default {
     align-items: flex-start;
     align-content: flex-start;
     width: 100%;
-    padding-top: 10vh;
+    padding: 10vh 0 0;
     box-sizing: border-box;
 
     .single {

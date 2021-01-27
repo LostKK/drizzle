@@ -42,25 +42,13 @@ import ImageResize from "quill-image-resize-module";
 Quill.register("modules/imageDrop", ImageDrop);
 Quill.register("modules/imageResize", ImageResize);
 
-const toolbarOptions = [
+const toolOptions = [
   ["bold", "italic", "underline", "strike"], // 切换按钮
-  ["blockquote", "code-block"],
-
-  [{ header: 1 }, { header: 2 }], // 用户自定义按钮值
   [{ list: "ordered" }, { list: "bullet" }],
-  [{ script: "sub" }, { script: "super" }], // 上标/下标
-  [{ indent: "-1" }, { indent: "+1" }], // 减少缩进/缩进
-  [{ direction: "rtl" }], // 文本下划线
-
-  [{ size: ["small", false, "large", "huge"] }], // 用户自定义下拉
   [{ header: [1, 2, 3, 4, 5, 6, false] }],
-
-  [{ color: [] }, { background: [] }], // 主题默认下拉，使用主题提供的值
-  [{ font: [] }],
-  [{ align: [] }],
-
   ["image", "video"], //上传图片、上传视频
-  ["clean"]
+  ["clean"],
+  ["saveBtn"]
 ];
 
 export default {
@@ -84,17 +72,20 @@ export default {
   },
 
   data() {
+    var that = this;
     return {
       uploadUrl: "https://test.mybox.lucky286.cn" + "/files/files",
       fileList: [],
-
       context: "<p></p>",
-
       editorOption: {
         modules: {
           toolbar: {
-            container: toolbarOptions,
+            container: toolOptions,
             handlers: {
+              saveBtn: function() {
+                //添加工具方法
+                console.log(that.context);
+              },
               image: function(value) {
                 if (value) {
                   document.getElementById("upload").click();
@@ -130,6 +121,9 @@ export default {
   mounted() {
     this.localPaste();
     this.textChange();
+    const sourceEditorButton = document.querySelector(".ql-saveBtn");
+    sourceEditorButton.style.cssText = "width:80px;";
+    sourceEditorButton.innerText = "保存";
   },
 
   methods: {
@@ -252,6 +246,6 @@ export default {
 
 <style lang="scss" scoped>
 .editor {
-  height: 100vh;
+  height: calc(100vh - 42px);
 }
 </style>

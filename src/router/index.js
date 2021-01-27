@@ -17,32 +17,55 @@ const routes = [
   {
     path: "/collect",
     name: "collect",
-    component: () => import("@/views/pages/collect.vue")
-  },
-  {
-    path: "/about",
-    name: "about",
-    component: () => import("@/views/pages/about.vue")
+    component: () => import("@/views/collect/collect.vue"),
+    children: [
+      {
+        path: "/",
+        name: "collectIndex",
+        component: () => import("@/views/collect/collectIndex.vue")
+      },
+      {
+        path: "/snow",
+        name: "snow",
+        component: () => import("@/views/collect/snow.vue")
+      },
+      {
+        path: "/she",
+        name: "she",
+        component: () => import("@/views/collect/she.vue")
+      },
+      {
+        path: "/wish",
+        name: "wish",
+        component: () => import("@/views/collect/wish.vue")
+      },
+      {
+        path: "/rain",
+        name: "rain",
+        component: () => import("@/views/collect/rain.vue")
+      },
+      {
+        path: "/learn",
+        name: "learn",
+        component: () => import("@/views/collect/learn.vue")
+      },
+      {
+        path: "/film",
+        name: "film",
+        component: () => import("@/views/collect/film.vue")
+      }
+    ]
   },
   {
     path: "/about2",
     name: "about2",
     component: () => import("@/views/pages/about2.vue")
   },
-  {
-    path: "/snow",
-    name: "snow",
-    component: () => import("@/views/collect/snow.vue")
-  },
-  {
-    path: "/test",
-    name: "test",
-    component: () => import("@/views/collect/test.vue")
-  },
+
   {
     path: "/edit",
     name: "edit",
-    component: () => import("@/views/component/edit.vue")
+    component: () => import("@/views/pages/edit.vue")
   },
   {
     path: "/workDetail",

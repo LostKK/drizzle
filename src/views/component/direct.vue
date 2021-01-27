@@ -18,7 +18,7 @@
 
       <div
         class="single"
-        @click="toNext({ name: 'collect' })"
+        @click="toNext({ name: 'collectIndex' })"
         v-bind:class="[alive === 'Collect' ? 'alive' : 'notAlive']"
       >
         <font>Collect</font>

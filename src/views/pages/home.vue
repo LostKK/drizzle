@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import direct from "@/views/pages/direct.vue";
+import direct from "@/views/component/direct.vue";
 import word from "@/views/component/word.vue";
 import lines from "@/views/component/line.vue";
 

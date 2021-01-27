@@ -94,7 +94,7 @@
 </template>
 
 <script>
-import direct from "@/views/pages/direct.vue";
+import direct from "@/views/component/direct.vue";
 
 export default {
   name: "about",
