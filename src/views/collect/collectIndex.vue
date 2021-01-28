@@ -52,7 +52,7 @@ export default {
     direct
   },
 
-  mounted() {
+  created() {
     this.current = this.collectList[0];
     this.currentIndex = 1;
   },
@@ -71,7 +71,6 @@ export default {
         {
           name: "大雨滂沱",
           text: "多少故事甜在心头",
-
           image:
             "https://i.cssj.fun/usr/uploads/2019/08/le-creuset-m4ChAAL8E98-unsplash.png",
           routeName: "rain"

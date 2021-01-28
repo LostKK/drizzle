@@ -16,7 +16,7 @@ const routes = [
   },
   {
     path: "/collect",
-    name: "collect",
+    name: "",
     component: () => import("@/views/collect/collect.vue"),
     children: [
       {
