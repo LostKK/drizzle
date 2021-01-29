@@ -8,12 +8,12 @@
     >
       <div class="up_inner">
         <div class="title">{{ article.title }}</div>
-        <div class="time">{{ article.time }}</div>
+        <!-- <div class="time">{{ article.time }}</div> -->
       </div>
     </div>
     <div class="down">
       <div class="down_inner">
-        <div v-html="article.detail" class="context"></div>
+        <mavon-editor codeStyle="monokai-sublime" v-html="article.detail" />
       </div>
     </div>
   </div>
@@ -112,7 +112,6 @@ export default {
   }
   .down {
     width: 100%;
-    // height: 1000px;
     display: flex;
     justify-content: center;
     .down_inner {
@@ -121,11 +120,16 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      z-index: 9;
       div {
         width: 100%;
         overflow: hidden;
         margin-bottom: 20px;
       }
+    }
+    .shadow {
+      box-shadow: none !important;
+      background: none;
     }
   }
 }

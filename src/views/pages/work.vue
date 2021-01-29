@@ -18,7 +18,7 @@
           <div class="title">
             <span>{{ item.title }}</span>
           </div>
-          <div class="time">{{ item.time }}</div>
+          <!-- <div class="time">{{ item.time }}</div> -->
           <div class="text">{{ item.text }}</div>
         </div>
       </div>

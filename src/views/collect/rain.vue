@@ -130,10 +130,12 @@ export default {
         this.$set(this.rainBtns[4], "active", true);
         this.$refs[`music4`][0].pause();
         this.$refs[`music5`][0].play();
+        !active && this.$refs[`music${5}`][0].pause();
       } else if (type === 4) {
         this.$set(this.rainBtns[5], "active", true);
         this.$refs[`music5`][0].pause();
         this.$refs[`music4`][0].play();
+        !active && this.$refs[`music${4}`][0].pause();
       } else {
         active && this.$refs[`music${type}`][0].play();
         !active && this.$refs[`music${type}`][0].pause();

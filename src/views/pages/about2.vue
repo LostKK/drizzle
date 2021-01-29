@@ -4,6 +4,10 @@
     <div class="first_page">
       <mavon-editor codeStyle="monokai-sublime" v-html="contentHtml" />
     </div>
+
+    <div class="flower flower-size">
+      <img src="@/assets/picture/about/flower2.jpg" />
+    </div>
   </div>
 </template>
 
@@ -31,6 +35,7 @@ export default {
   min-height: 100vh;
   width: 100vw;
   display: flex;
+  position: relative;
   .first_page {
     display: flex;
     padding-top: 10vh;
@@ -43,6 +48,27 @@ export default {
   }
   .shadow {
     box-shadow: none !important;
+    background: none;
+  }
+  .flower {
+    position: absolute;
+
+    z-index: 8;
+  }
+}
+
+.flower-size {
+  right: 10%;
+  top: 30%;
+  img {
+    height: 500px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flower-size {
+    display: none;
   }
 }
 
